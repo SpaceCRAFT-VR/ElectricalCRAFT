@@ -4,12 +4,12 @@ import sys
 # from ahkab import dc_guess
 #ahkab --help
 
-# Create a TCP/IP socket
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# # Create a TCP/IP socket
+# s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Connect the socket to the port where the server is listening
-server_address = ('localhost', 1234)
-s.connect(server_address)
+# # Connect the socket to the port where the server is listening
+# server_address = ('localhost', 1234)
+# s.connect(server_address)
 
 mycir = ahkab.Circuit('Simple Circuit')
 
@@ -36,6 +36,21 @@ r = ahkab.run(mycir, opa)['op']
 #print the output to a file
 with open('test_file.txt', 'w') as f:
     print(r, file=f)
+
+with open('test_file.txt', 'r') as f:
+    data = f.read()#.replace('\n', '')
+
+print(data)
+
+sock.bind(('', port))
+sock.listen(1)
+client,clientinfo=sock.accept()
+while True:
+    var = client.recv(1024)
+    s.sendall(var)
+
+
+
 #
 # #read the voltages from the file
 # voltage_list ={}

@@ -1,5 +1,5 @@
 OP simulation results for 'Simple Circuit'.
-Run on 2019-06-12 19:33:08, data file C:\Users\ASTRO\AppData\Local\Temp\tmpub5cxluy.op.
+Run on 2019-06-12 19:50:16, data file C:\Users\ASTRO\AppData\Local\Temp\tmpbdrf44_z.op.
 Variable    Units       Value         Error    %
 ----------  -------  --------  ------------  ---
 VN1         V        -5.17606   5.1763e-12     0
