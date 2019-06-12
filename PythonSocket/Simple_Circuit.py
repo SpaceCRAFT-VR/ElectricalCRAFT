@@ -1,7 +1,15 @@
 import ahkab
 import socket
+import sys
 # from ahkab import dc_guess
 #ahkab --help
+
+# Create a TCP/IP socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect the socket to the port where the server is listening
+server_address = ('localhost', 1234)
+s.connect(server_address)
 
 mycir = ahkab.Circuit('Simple Circuit')
 
