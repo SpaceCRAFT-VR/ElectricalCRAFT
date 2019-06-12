@@ -39,42 +39,41 @@ void Circuit_Display::update()
   map<string, string> paramList;
 
   // List of parameters you need to perform your calculations
-  float   locationX;
-  float   velocityX;
+  float   voltage;
+  float   current;
 
 	cout<<customVARIABLE<<","<<entities.size()<<endl;
-	string agr = "";
-	string temp = "";
-	string hum = "";
-	for(int i =0;i<customVARIABLE.length();i++){
+	string voltage = "1.4";
+	string current = "0.2";
+	// for(int i =0;i<customVARIABLE.length();i++){
 		
-		if(customVARIABLE[i] == ','){
-			temp = agr;
-			agr="";
+	// 	if(customVARIABLE[i] == ','){
+	// 		temp = agr;
+	// 		agr="";
 			
-		}
-		else if(customVARIABLE[i] == '\r' ||
-				customVARIABLE[i] == '\n'){
-					break;
+	// 	}
+	// 	else if(customVARIABLE[i] == '\r' ||
+	// 			customVARIABLE[i] == '\n'){
+	// 				break;
 					
-		}
-		else{
-			agr += customVARIABLE[i];
-		}
-	}
-	hum = agr;
+	// 	}
+	// 	else{
+	// 		agr += customVARIABLE[i];
+	// 	}
+	// }
+	// hum = agr;
   for (int i = 0; i < entities.size(); i++)
 	{
 		string target = entities.at(i)->getName();
 		cout<<target<<",";
-		if(target == "Circuit_Display2" ){
+		if(target == "Circuit_Display" ){
 			cout<<"here"<<endl;
 			paramList  = entities.at(i)->getParameters();
 			
-			entities.at(i)->setParameter( "Temperature", 
-										temp );
-			entities.at(i)->setParameter( "Humidity", 
-										hum );
+			entities.at(i)->setParameter( "Voltage", 
+										voltage );
+			entities.at(i)->setParameter( "Current", 
+										current );
 										
 		}
   		
