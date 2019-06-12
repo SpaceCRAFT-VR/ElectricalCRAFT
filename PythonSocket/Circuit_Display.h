@@ -4,7 +4,7 @@
 #include "./../server/Entity.h"
 #include "./../server/System.h"
 #include "./../server/SafeQueue.h"
-#include "client.cpp"
+// #include "client.cpp"
 //NOTE: more #includes for added-in libraries go here
 
 class Circuit_Display : public System
@@ -13,7 +13,7 @@ private:
 	AtomicStandardOutput* atomicOutput;
 	//OPTIONAL:
 	string customVARIABLE;
-	BTHWL interface;
+	// BTHWL interface;
 
 public:
 	Circuit_Display();

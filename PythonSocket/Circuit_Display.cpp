@@ -20,7 +20,7 @@ Circuit_Display::Circuit_Display()
 
 void Circuit_Display::get_data()
 {
-	customVARIABLE = interface.recv_HW();
+	// customVARIABLE = interface.recv_HW();
 }
 
 void Circuit_Display::init()
@@ -28,20 +28,21 @@ void Circuit_Display::init()
 	//OPTIONAL:
 	// Get your System's instance parameters
 	
-	customVARIABLE = Circuit_Display::interface.connect();
-	cout<<"donioni"<<endl;
+	// customVARIABLE = Circuit_Display::interface.connect();
+	// cout<<"donioni"<<endl;
 	// Can do as many as you want
 }
 
 void Circuit_Display::update()
 {
-	Circuit_Display::get_data();
+	// Circuit_Display::get_data();
   map<string, string> paramList;
 
   // List of parameters you need to perform your calculations
-  float   voltage;
-  float   current;
+  float   _voltage;
+  float   _current;
 
+    cout<<"Print out Circuit Entity Size"<<endl;
 	cout<<customVARIABLE<<","<<entities.size()<<endl;
 	string voltage = "1.4";
 	string current = "0.2";
@@ -67,7 +68,7 @@ void Circuit_Display::update()
 		string target = entities.at(i)->getName();
 		cout<<target<<",";
 		if(target == "Circuit_Display" ){
-			cout<<"here"<<endl;
+			cout<<"here Maria"<<endl;
 			paramList  = entities.at(i)->getParameters();
 			
 			entities.at(i)->setParameter( "Voltage", 

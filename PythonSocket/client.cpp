@@ -52,7 +52,7 @@ struct BTHWL{
 	pid = fork();
 	if(pid==0){
 		cout<<getexepath()<<endl;
-	execlp("python.exe","python.exe","python_blue_test.py", (char *)NULL);}
+	execlp("python.exe","python.exe","Simple_Circuit.py", (char *)NULL);}
 	else{
 	cout<<"here"<<endl;
     if (listen(server_fd, 3) < 0) 
