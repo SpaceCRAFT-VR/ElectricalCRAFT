@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ElectricalCRAFT.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C2D9CD1A-E3D7-4C7A-BD40-A2AD7A4B0134}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ElectricalCRAFT.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ElectricalCRAFTEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{F8FDBC50-E56D-4C61-BDE5-808611791030}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ElectricalCRAFT">
+      <UniqueIdentifier>{8FFFFEA9-F3FE-46F0-83A3-D1F18C2A7199}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ElectricalCRAFT\ElectricalCRAFT.Build.cs">
+      <Filter>Source\ElectricalCRAFT</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ElectricalCRAFT\ElectricalCRAFT.cpp">
+      <Filter>Source\ElectricalCRAFT</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ElectricalCRAFT\ElectricalCRAFT.h">
+      <Filter>Source\ElectricalCRAFT</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ElectricalCRAFT\ElectricalCRAFTGameModeBase.cpp">
+      <Filter>Source\ElectricalCRAFT</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ElectricalCRAFT\ElectricalCRAFTGameModeBase.h">
+      <Filter>Source\ElectricalCRAFT</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
