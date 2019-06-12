@@ -1,5 +1,6 @@
 import ahkab
-from ahkab import dc_guess
+import socket
+# from ahkab import dc_guess
 #ahkab --help
 
 mycir = ahkab.Circuit('Simple Circuit')
@@ -17,16 +18,16 @@ mycir.add_resistor('R6','n4','n001',value=10)
 
 opa = ahkab.new_op() # Assembles an OP analysis and returns the analysis object.
 r = ahkab.run(mycir, opa)['op']
-print(r)
+#print(r)
 
-print('---------------------------------------------')
-a = mycir.get_nodes_number()
-print(a)
-print('----------------------------------------------')
+# print('---------------------------------------------')
+# a = mycir.get_nodes_number()
+# print(a)
+# print('----------------------------------------------')
 
-# #print the output to a file
-# with open('test_file.txt', 'w') as f:
-#     print(r, file=f)
+#print the output to a file
+with open('test_file.txt', 'w') as f:
+    print(r, file=f)
 #
 # #read the voltages from the file
 # voltage_list ={}
