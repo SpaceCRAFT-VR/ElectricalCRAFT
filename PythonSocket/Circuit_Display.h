@@ -12,13 +12,13 @@ class Circuit_Display : public System
 private:
 	AtomicStandardOutput* atomicOutput;
 	//OPTIONAL:
-	string customVARIABLE;
-	// BTHWL interface;
+	// string customVARIABLE;
+	// // BTHWL interface;
 
 public:
 	Circuit_Display();
 	void init();
 	void update();
-	void CUSTOM_FUNCTION(float &PARAM_1, float &PARAM_2);
-	void get_data();
+	// void CUSTOM_FUNCTION(float &PARAM_1, float &PARAM_2);
+	// void get_data();
 };

@@ -6,31 +6,28 @@
 #include <sstream>
 #include <stdlib.h> // for stoi
 
-using std::string;
-using std::to_string;
-using std::cout;
-using std::map;
+// using std::string;
+// using std::to_string;
+// using std::cout;
+// using std::map;
 
-using std::stof;
+// using std::stof;
+
+using namespace std;
 
 Circuit_Display::Circuit_Display()
 {
 
 }
 
-void Circuit_Display::get_data()
-{
-	// customVARIABLE = interface.recv_HW();
-}
+// void Circuit_Display::get_data()
+// {
+// 	// customVARIABLE = interface.recv_HW();
+// }
 
 void Circuit_Display::init()
 {
-	//OPTIONAL:
-	// Get your System's instance parameters
-	
-	// customVARIABLE = Circuit_Display::interface.connect();
-	// cout<<"donioni"<<endl;
-	// Can do as many as you want
+
 }
 
 void Circuit_Display::update()
@@ -39,61 +36,44 @@ void Circuit_Display::update()
   map<string, string> paramList;
 
   // List of parameters you need to perform your calculations
-  float   _voltage;
-  float   _current;
+  string   voltage;
+  string   current;
 
     cout<<"Print out Circuit Entity Size"<<endl;
-	cout<<customVARIABLE<<","<<entities.size()<<endl;
-	string voltage = "1.4";
-	string current = "0.2";
-	// for(int i =0;i<customVARIABLE.length();i++){
-		
-	// 	if(customVARIABLE[i] == ','){
-	// 		temp = agr;
-	// 		agr="";
-			
-	// 	}
-	// 	else if(customVARIABLE[i] == '\r' ||
-	// 			customVARIABLE[i] == '\n'){
-	// 				break;
-					
-	// 	}
-	// 	else{
-	// 		agr += customVARIABLE[i];
-	// 	}
-	// }
-	// hum = agr;
+	// cout<<customVARIABLE<<","<<entities.size()<<endl;
+
+
+
   for (int i = 0; i < entities.size(); i++)
 	{
-		string target = entities.at(i)->getName();
-		cout<<target<<",";
-		if(target == "Circuit_Display" ){
-			cout<<"here Maria"<<endl;
-			paramList  = entities.at(i)->getParameters();
-			
-			entities.at(i)->setParameter( "Voltage", 
-										voltage );
-			entities.at(i)->setParameter( "Current", 
-										current );
-										
-		}
-  		
+	  	paramList  = entities.at(i)->getParameters();
 
-            
+		// Lookup the paramaters you need inside return map
+		//get Name of component
+		string target = entities.at(i)->getName();
+		cout<<"Here is Maria's Electrical Sim"<<endl;
+
+		//Update Parameter Values
+		voltage = "3.3v";
+		current = "1.2mA";
+
+		//Update the entity data
+		entities.at(i)->setParameter( "Voltage", voltage);
+		entities.at(i)->setParameter( "Current", current);
 
 	}
-	cout<<endl;
+	cout << endl ;
 }
 
 extern "C"
 {
-  Circuit_Display* create(map<string, string> properties)
+  Circuit_Display* create(map<string, string> parameters)
   {
     // Create new instance and return
     Circuit_Display* newInstance = new Circuit_Display();
 
     // Set parameters Here
-    newInstance->setProperties(properties);
+    newInstance->setProperties(parameters);
 
     return newInstance;
   }
