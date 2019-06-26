@@ -36,3 +36,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Files over 100MB
+Saved/Autosaves/Game*
+Content/Maps/TestMap_BuiltData.uasset

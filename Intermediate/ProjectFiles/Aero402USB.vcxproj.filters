@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Aero402USB.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{B0BF83BB-F225-413F-ADEF-34330E471431}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Aero402USB.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\Aero402USBEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{BCB2E6DA-B30E-423F-8D56-49130EB4EE09}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\Description Backup 2018-10-02 142407.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\Input Backup 2018-10-02 142559.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Aero402USB">
+			<UniqueIdentifier>{3C5C93F7-4FCA-4BF8-8529-B06853BA4729}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\Aero402USB\ACTOR_ECLSS_GH.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\ACTOR_ECLSS_GH.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<None Include="..\..\Source\Aero402USB\Aero402USB.Build.cs">
+			<Filter>Source\Aero402USB</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Aero402USB\Aero402USB.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\Aero402USB.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Aero402USB\Aero402USBGameModeBase.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\Aero402USBGameModeBase.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Aero402USB\AirlockMathModel_Main.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\AirlockMathModel_Main.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Aero402USB\AL_AirMathematicalMark_Final.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\AL_AirMathematicalMark_Final.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Aero402USB\ECLSS_GH.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\ECLSS_GH.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Aero402USB\ThermoModel.cpp">
+			<Filter>Source\Aero402USB</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Aero402USB\ThermoModel.h">
+			<Filter>Source\Aero402USB</Filter>
+		</ClInclude >
+	</ItemGroup>
+</Project>
